@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praticando DOM</title>
+    <style>
+        .escura{
+            margin-bottom: 300px;
+        }
+    </style>
 </head>
 <body>
     <h1 id="h1">Testando</h1>
     <p id="p1">testando o DOm </p>
+    <div style="height: 90px; padding: 20px;" id="div1"><img src="../../../oprimeiropapa/midias/santatrindade.jpg" alt=""></div>
     <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio reiciendis commodi fuga quos dolor molestias adipisci quod! Eligendi fugit velit rerum voluptas saepe non quas veniam explicabo repellendus voluptatem. Velit.</p>
-    <script>
+    <script> 
+        var div = window.document.getElementById('div1')
         var title = window.document.getElementById('h1')
         var p1 = window.document.getElementById('p1')
         var p2 = window.document.getElementById('p2')
@@ -19,6 +26,7 @@
         p1.style.color='red'
         p2.style.color='green'
         title.style.color='yellow'
+        div1.setAttribute('class', 'escura')
         window.document.write('FEIO PRA CARAMBA')
     </script>
 </body>
