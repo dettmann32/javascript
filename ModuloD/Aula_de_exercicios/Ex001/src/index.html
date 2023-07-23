@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="bg-[#C8B689]" onload="carregar()" id="fundo">
+    <div>
+        <h1 class="text-center">Hora do dia</h1>
+        <div class="m-auto container max-w-[500px] h-[300px] bg-gray-200 rounded-xl">
+            <div class="py-10">
+                <h2 class="text-center" id="msg">Agora são 00 horas</h2>               
+            </div>
+            <div id="foto" class="m-auto">
+                <img src="../img/manha.jpg" alt="fotodamanha" id="img" class="m-auto rounded-[50%] h-[150px] w-[155px]">
+            </div>
+        </div>
+    </div>
+    <p class="text-center">@Curso em video</p>
+    <script src="script.js"></script>
 </body>
 </html>

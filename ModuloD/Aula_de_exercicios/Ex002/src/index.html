@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-blue-500">
+    <header>
+        <h1 class="text-center text-3xl">Medidor de idade</h1>
+    </header>
+    <main class="flex flex-col justify-center my-10 bg-gray-200 h-[300px] w-[500px] mx-auto rounded-xl">
+        <section class="flex m-auto gap-x-10">
+            <h2>Ano de nascimento</h2><input type="number" id="idade" min="1">
+        </section>
+        <section class="flex m-auto gap-x-10 mt-10">
+            <h2>Sexo</h2>
+            <p>
+                <input type="radio" name="radsex" id="sexom">
+                <label for="sexom">Masculino</label>
+                <input type="radio" name="radsex" id="sexof">
+                <label for="sexof">Feminino</label>
+                
+            </p>
+            
+            <p>
+                <input type="button" value="verificar" onclick="verificar()" class="bg-blue-400 p-2 rounded-xl text-white hover:bg-blue-200 focus:bg-blue-700 transition">
+            </p>
+            <div id="span" class="absolute top-[330px]"></div>
+        </section>
+    </main>
+    <footer>
+        <p class="text-center">por mim mesmo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
