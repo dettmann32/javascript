@@ -1,0 +1,17 @@
+{
+"databank":{
+  "users": [
+    { "id": 1, "username": "usuario1", "email": "usuario1@example.com" },
+    { "id": 2, "username": "usuario2", "email": "usuario2@example.com" }
+  ],
+  "posts": [
+    { "id": 1, "title": "Primeiro post", "userId": 1 },
+    { "id": 2, "title": "Segundo post", "userId": 2 }
+  ],
+  "comments": [
+    { "id": 1, "text": "Ótimo post!", "postId": 1 },
+    { "id": 2, "text": "Concordo com você.", "postId": 1 },
+    { "id": 3, "text": "Mal posso esperar pelo próximo!", "postId": 2 }
+  ]
+}
+}
