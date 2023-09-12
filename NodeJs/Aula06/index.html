@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/rota" method="POST" id="form-api">
+        <input type="text" name="titulo" placeholder="nome">
+        <input type="email" name="tito" placeholder="email">
+        <button type="submit">Cadastrar postagem</button>
+    </form>
+    <script>
+        const formEL = document.getElementById('form-api')
+
+        formEL.addEventListener('submit',evento => {
+            evento.preventDefault()
+
+            const fromData = new fromData(formEL)
+            const data = Object.fromEntries(fromData)
+
+
+            fetch('http://localhost:3000/rota',{
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify(data)
+            })
+        })
+    </script>
+</body>
+</html>
